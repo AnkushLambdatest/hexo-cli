@@ -1,17 +1,12 @@
 ---
-framework: mocha
+
+framework: mocha 
+
 preRun:
-     command:
-        - npm install
-        - npm run prepare
-preMerge:
-  pattern:
-    - "./test/index.js"
+  command:
+    - npm install
+    - npm run prepare
+
 postMerge:
-  pattern: 
-    - "./test/index.js"
-postRun:
-     command:
-        - node --version
-nodeVersion: 12.22.7
-version: 1.0
+  pattern:
+    - "test/index.js"
